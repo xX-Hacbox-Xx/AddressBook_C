@@ -122,7 +122,7 @@ void read_friend_data(struct friends_list friends[])
         return;
     int i, j;
     char s[3] = {};
-    if ((fp = fopen("F:\\Code\\demo\\demo05\\data.txt ", "rb")) == NULL)
+    if ((fp = fopen("data.txt ", "rb")) == NULL)
     {
         printf("无法打开通讯录文件！\n");
         exit(0);
@@ -141,7 +141,7 @@ void read_friend_data(struct friends_list friends[])
 void write_friend_data(struct friends_list friends[])
 {
     int i = 0;
-    if ((fp = fopen("F:\\Code\\demo\\demo05\\data.txt ", "r+b")) == NULL)
+    if ((fp = fopen("data.txt", "r+b")) == NULL)
     {
         printf("无法打开通讯录文件！\n");
         exit(0);
@@ -163,7 +163,7 @@ void read_count_data(struct friends_list friends[])
 {
     char s[3] = {};
     int n, i;
-    if ((fp = fopen("F:\\Code\\demo\\demo05\\data.txt ", "r")) == NULL)
+    if ((fp = fopen("data.txt", "r")) == NULL)
     {
         printf("无法打开通讯录文件！\n");
         exit(0);
@@ -186,7 +186,7 @@ void write_count_data(struct friends_list friends[])
 {
     char s[2] = {};
     int n, i;
-    if ((fp = fopen("F:\\Code\\demo\\demo05\\data.txt ", "r+")) == NULL)
+    if ((fp = fopen("data.txt", "r+")) == NULL)
     {
         printf("无法打开通讯录文件！\n");
         exit(0);
