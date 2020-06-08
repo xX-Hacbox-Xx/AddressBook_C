@@ -122,7 +122,7 @@ void read_friend_data(struct friends_list friends[])
         return;
     int i, j;
     char s[3] = {};
-    if ((fp = fopen("data.txt ", "rb")) == NULL)
+    if ((fp = fopen("data.txt ", "rb")) == NULL)        //这里的文件目录需要修改
     {
         printf("无法打开通讯录文件！\n");
         exit(0);
